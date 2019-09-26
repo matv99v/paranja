@@ -1,0 +1,57 @@
+@import 'toggler';
+
+.dev-helper__paranja {
+  // border: 2px solid lime;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  .dev-helper__img-box {
+    // border: 2px solid red;
+    flex-grow: 1;
+    // position: relative;
+    overflow: hidden;
+  }
+
+  .dev-helper__img-wrapper {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+  }
+
+  .dev-helper__img {
+    // background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm2q6m1iRsXQlggwq3oQ8mcy7fvpAvRqMl9fie8Mf8Ya6jjF8zUg');
+    // top: 0;
+    // left: 0;
+    // opacity: 0.5;
+    // background-color: magenta;
+
+    // background-repeat: no-repeat;
+    // height: 100%;
+    // width: 100%;
+    // position: absolute;
+    // background-blend-mode: screen;
+    mix-blend-mode: screen;
+  }
+
+  .dev-helper__controls {
+    // border: 2px solid blue;
+    display: flex;
+    & > * {
+      margin-right: 20px;
+    }
+
+    input[name="top"], input[name="left"] {
+      width: 25px;
+    }
+
+  }
+
+  .dev-helper-file-input {
+    display: none;
+  }
+}
